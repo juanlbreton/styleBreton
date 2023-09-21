@@ -7,6 +7,8 @@
 #' @return Applies Breton style to an existing ggplot2 plot
 #' @export
 #'
+#' @importFrom ggtext element_markdown
+#'
 #' @examples
 #' mtcars |>
 #' ggplot2::ggplot(ggplot2::aes(x = cyl, group = cyl, fill = as.factor(cyl))) +
