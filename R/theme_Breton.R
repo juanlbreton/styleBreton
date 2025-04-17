@@ -4,8 +4,24 @@
 #' Applies Breton look and feel to an existing ggplot2 plot.
 #'
 #'
-#' @return Applies Breton style to an existing ggplot2 plot
+#' @return A ggplot2 theme object Breton style
 #' @export
+theme_breton <- function() {
+  ggplot2::theme(
+    text = element_text(family = "Encode Sans Condensed"),
+    panel.background = element_rect(fill = "#FFFFFF"),
+    panel.grid = element_line(color = "grey95"),
+    axis.line = element_line(color = "darkgrey"),
+    plot.title = element_text(face = "bold",
+                              size = rel(1.55)),
+    plot.title.position = "plot",
+    plot.caption = ggtext::element_markdown(color = "darkgrey",
+                                            hjust = 0,
+                                            lineheight = 1.25,
+                                            size = rel(0.85)),
+    plot.caption.position = "plot"
+  )
+}
 #'
 #' @importFrom ggtext element_markdown
 #'
@@ -17,20 +33,4 @@
 #'      caption = "Nice plot") +
 #' theme_breton()
 #'
-theme_breton <- function() {
-  theme(
-    text = element_text(family = "Encode Sans Condensed"),
-    panel.background = element_rect(fill = "#FFFFFF"),
-    panel.grid = element_line(color = "grey95"),
-    axis.line = element_line(color = "darkgrey"),
-    plot.title = element_text(face = "bold",
-                              size = rel(1.55)),
-    plot.title.position = "plot",
-    plot.caption = ggtext::element_markdown(color = "darkgrey",
-                                    hjust = 0,
-                                    lineheight = 1.25,
-                                    size = rel(0.85)),
-    plot.caption.position = "plot"
-  )
-}
 

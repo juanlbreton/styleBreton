@@ -1,8 +1,11 @@
 Package: styleBreton
 Type: Package
 Title: Applies Breton Style to ggplot2 Plots
-Version: 0.1.0.9000
-Author: Juan L. Bretón, PMP
+Version: 0.1.0.9001
+Author: c(
+  person(
+  "Juan L.", "Bretón, PMP",
+  role = c("aut", "cre")))
 Maintainer: Juan l. Bretón, PMP <jlbreton@exatec.tec.mx>
 Description: Applies Breton look and feel to a ggplot2 plot
 License: MIT + file LICENSE
